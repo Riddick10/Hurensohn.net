@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hurensohn.net</title>
+  <link rel="icon" type="image/x-icon" href="img/Icon2.png" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+  <div id="container">
+    <header>
+
+      <img src="img/bannerK.png" alt="Bild" style="border: 0px solid rgb(18, 17, 17)" width="100%" />
+
+      <div class="linkleiste">
+        <a class="menu-link" href="index.html"><u>Startseite</u></a>
+        <a class="menu-link" href="bilder.html">Bilder</a>
+        <a class="menu-link" href="videos.html">Videos</a>
+        
+        <a class="menu-link" href="musik.html">Musik</a>
+      </div>
+
+    </header>
+
+
+
+    <main>
+      <br>
+      <p id="datetime"></p>
+
+      <script>
+        function updateDateTime() {
+          const now = new Date();
+          const options = {
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit",
+            timeZoneName: "short",
+          };
+          const formattedDate = now.toLocaleString("de-DE", options);
+
+          document.getElementById("datetime").textContent = formattedDate;
+        }
+
+        // Initialisierung und Aktualisierung alle 1 Sekunde
+        updateDateTime();
+        setInterval(updateDateTime, 1000);
+      </script>
+      <h1>Willkommen auf der Hurensohn.net Website!</h1>
+      <p>
+        <b>Auf dieser Website findest du coole Bilder, Videos Gifs und
+          Musik!</b>
+      </p>
+
+      <img src="img/Diagnose2.jpg" alt="Bild" width="35%" />
+
+      <br />
+
+      <p>
+        Hurensohn gilt traditionell als eine besonders schwerwiegende
+        Beleidigung, da sie sich nicht nur gegen den Beleidigten selbst,
+        sondern auch gegen die Familienehre, speziell die Ehre der Mutter,
+        richtet. Früher waren damit im deutschen Sprachraum allerdings nicht
+        ausschließlich die Söhne von Huren, sondern auch uneheliche Kinder
+        gemeint, bei denen die Mutter den Vater nicht angeben wollte oder
+        konnte. (Siehe auch: Kind und Kegel) In der Jugendsprache wird die
+        Bezeichnung seit den 1990er Jahren in der Regel unabhängig vom
+        familiären Hintergrund verwendet. Es kann sich situationsabhängig um
+        eine Provokation bis hin zu einer schweren Anfeindung handeln,
+        allerdings wird es auch oftmals sarkastisch verwendet. Abgekürzt wird
+        sie als Huso.[1] Entsprechende Beleidigungen sind auch in anderen
+        Sprachen geläufig, z. B.: engl. son of a bitch (abgekürzt SOB).
+      </p>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </main>
+
+
+    <footer>
+      <div class="unten">
+        <div class="colum">
+          <h3>Kontakt</h3>
+          <ul>
+            <li>
+              <svg class="icon">
+                <use xlink:href="/assets/drachenlord.dashboard.icons.svg?v=74#icon-discord"></use>
+              </svg>
+              <a href="">Discord</a>
+            </li>
+            <li>
+              <svg class="icon">
+                <use xlink:href="/assets/drachenlord.dashboard.icons.svg?v=74#icon-mail"></use>
+              </svg>
+              <a href="">E-Mail</a>
+            </li>
+          </ul>
+        </div>
+        <div class="colum">
+          <h3>Hilfe</h3>
+          <ul>
+            <li>
+              <a href="https://de.wikipedia.org/wiki/Wahrnehmungsstörung">Infos zu Wahrnehmungsstörungen</a>
+            </li>
+            <li>
+              <a href="">Daten exportieren</a>
+            </li>
+            <li>
+              <a href="">Datenschutz</a>
+            </li>
+          </ul>
+        </div>
+        <div class="colum">
+          <h3>Links</h3>
+          <ul>
+            <li>
+              <a href="">Schanzenwatch Telegram Gruppe</a>
+            </li>
+            <li>
+              <a href="https://de.wikipedia.org/wiki/Hurensohn">Hurensohn wiki</a>
+            </li>
+            <li><a href="">ASB Kurier</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

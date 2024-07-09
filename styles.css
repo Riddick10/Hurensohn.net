@@ -1,0 +1,105 @@
+body {
+    /* Allgemeine Stile für den gesamten Körper der Webseite */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Horizontal zentrieren */
+    min-height: 100vh; /* Mindesthöhe des Viewports, um den Inhalt mittig auszurichten */
+    background-image: url("img/HintergrundS.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: Hintergrund fixieren */
+    
+  }
+
+  * {
+    
+    cursor: url(img/Mausicon32x32_2.png), auto;
+}
+
+
+
+
+  #container {
+    text-align: center;
+    width: 65%;
+    background-color: rgb(213, 234, 247,0.95);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 1%;
+    box-shadow: 6px 0 8px -4px rgba(29, 204, 187, 0.8), -6px 0 8px -4px rgba(22, 207, 201, 0.8);
+    margin: 16px 0px;
+  }
+
+
+  .linkleiste {
+    background: rgb(255, 255, 255);
+    
+  }
+
+  .menu-link {
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    padding-bottom: 1px;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  .menu-link:hover {
+    background: lightgray;
+  }
+
+  header {
+    margin: 8px;
+  }
+
+  main {
+    margin: 16px;
+  }
+
+  footer {
+    border-top: 2px #000000 solid;
+    border-radius: 1px;
+    background: #6bdbc6;
+    color: #000000;
+    text-align: center;
+    padding: 5px 0;
+    font-size: .9em;
+    margin: 8px;
+  }
+
+  .unten {
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  footer .colum {
+    text-align: left;
+    width: 30%;
+    margin: 0 1%;
+    
+  }
+
+  svg.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 2px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+h3 {
+  border-bottom: 1px #000000 solid;
+}
+
+#datetime {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(196, 62, 62);
+}
